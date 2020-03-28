@@ -1,9 +1,9 @@
 #turnipbot.py
 import os
-import discord
-import turnipqueue
-from discord.ext import commands, tasks
+from discord.ext import commands
 from dotenv import load_dotenv
+
+from queue import turnipqueue
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
